@@ -28,7 +28,7 @@ on:
 jobs:
   check:
     name: Check
-    runs-on: for-android
+    runs-on: self-hosted-macOS-ARM64-for-android
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
@@ -47,7 +47,7 @@ jobs:
 
   build:
     name: Build
-    runs-on: for-android
+    runs-on: self-hosted-macOS-ARM64-for-android
 
     steps:
       - uses: actions/checkout@v4
